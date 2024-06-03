@@ -19,14 +19,10 @@
 /*-------variables-------*/
 
 :root {
-    /* --с: #d2dadf;
-    --dw: #749ebe;
-    --lw: #afc2d8; */
 
     --bg-color: #fafbef;
     --secondary: #576c8b;
 
-    /* --text-color: #827f83; */
     --text-color: #5a5750;
 
     --animation-color: #cc7080;
@@ -173,25 +169,6 @@ button:focus-visible {
     font-weight: 700;
 }
 
-/* .menu__link::after {
-    content: attr(data-name);
-    
-    position: absolute;
-    bottom: 11px;
-    left: 5px;
-    
-    color: var(--animation-color);
-    font-weight: bold;
-    font-size: 16px;
-    white-space: nowrap;
-    
-    width: 0%;
-    overflow: hidden;
-    
-    transition: all 0.5s;
-    
-  } */
-
 .menu__link::before {
     content: "";
     position: absolute;
@@ -199,52 +176,18 @@ button:focus-visible {
     left: 0;
     width: 0%;
     height: 2px;
-    /* background: linear-gradient(150deg,
-            rgb(193, 96, 58) 10%,
-            rgba(228, 162, 163, 1) 50%,
-            rgb(204, 112, 128) 100%); */
     background-color: var(--text-color);
     transition: all 0.5s;
 }
-
-/* .menu__link:focus {
-    outline: solid 2px var(--text-color);
-} */
-
-/* .menu__link:hover {
-    color: var(--animation-color);
-    transition: color 0.5s ease;
-} */
 
 .menu__link:hover::before {
     width: 100%;
 }
 
-/* .menu__link:hover::after {
-    width: 100%;
-} */
-
-
-/* .menu__link:hover {
-    text-decoration: underline 2px solid var(--text-color);
-    text-underline-offset: 4px;
-    transition: all 0.5s;
-    color: var(--animation-color); 
-}*/
-
 .gradient {
     background: #fafbef;
     height: 100%;
     width: 100%;
-
-    /* background: 
-        linear-gradient(red, transparent),
-        linear-gradient(to top left, #fbd4c5, transparent),
-        linear-gradient(to top right, blue, transparent); 
-        background-blend-mode: screen; */
-
-    /* background: linear-gradient(45deg, #EECFBA, #C5DDE8); */
-    /*background: linear-gradient(150deg, rgba(235,207,224,1) 0%, rgba(250,251,239,1) 31%, rgba(251,212,197,1) 52%, rgba(204,112,128,1) 86%, rgba(204,112,128,1) 100%);*/
     background: linear-gradient(150deg,
             rgba(87, 108, 139, 1) 1%,
             rgba(215, 160, 165, 1) 15%,
@@ -254,16 +197,6 @@ button:focus-visible {
             rgba(228, 162, 163, 1) 82%,
             rgba(216, 136, 145, 1) 91%,
             rgb(204, 112, 128) 100%);
-    /* background: linear-gradient(to top, #E4AF9D 20%, #E4E4D8 50%, #A19887 80%); */
-    /* background: 
-        linear-gradient(45deg, rgba(223,201,224,1) 0%, rgba(84,124,163,0) 100%),
-        linear-gradient(150deg, rgba(84,124,163,1) 0%, rgba(255,255,255,0.35906862745098034) 100%),
-        linear-gradient(to top right, blue, transparent);
-        background-blend-mode: screen; */
-    /*
-    background: 
-    radial-gradient(ellipse farthest-corner at right bottom, #fedb37 0%, #FDB931 8%, #9f7928 30%, #8a6e2f 40%, transparent 80%),
-    radial-gradient(ellipse farthest-corner at left top, #ffffff 0%, #ffffac 8%, #d1b464 25%, #5d4a1f 62.5%, #5d4a1f 100%); */
 
     background-size: 300%;
     animation: changecolor 10s infinite alternate-reverse;
@@ -695,10 +628,6 @@ input:checked+.slider:before {
     left: 0;
     width: 0%;
     height: 2px;
-    /* background: linear-gradient(150deg,
-            rgb(193, 96, 58) 10%,
-            rgba(228, 162, 163, 1) 50%,
-            rgb(204, 112, 128) 100%); */
     background-color: var(--text-color);
     transition: all 0.5s;
 }
